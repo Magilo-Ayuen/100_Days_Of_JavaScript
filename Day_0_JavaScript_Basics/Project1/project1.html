@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Info Collection & Validation</title>
+    <link rel="stylesheet" href="project1.css">
+</head>
+<body>
+    
+    <div class="container">
+
+        <h2>User Information</h2>
+
+    <form>
+        <div class="first">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" required placeholder="e.g. John">
+        </div>
+
+        <div class="second">
+            <label for="secondName">First Name:</label>
+            <input type="text" id="secondName" required placeholder="e.g. Doe">
+        </div>
+
+        <div class="city">
+            <label for="cityEmploy">City of Employment:</label>
+            <input type="text" id="cityEmploy">
+        </div>
+
+        <label for="servers">Choose a server:</label>
+
+        <select name="servers" id="servers">
+            <option value="" disabled selected>--Choose a server--</option>
+            <option value="s1">Server1</option>
+            <option value="s2">Server2</option>
+            <option value="s3">Server3</option>
+            <option value="s4">Server4</option>
+        </select>
+
+        <button type="submit">Login</button>
+        <button type="submit">Reset</button>
+
+    </div>
+
+    
+    </form>
+
+    <script src="project1.js"></script>
+</body>
+</html>
