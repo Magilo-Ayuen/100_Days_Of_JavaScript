@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <button>HELLO</button>
+    <button class="sec-btn">Second Button</button>
+
+
+
+    <script>
+        /*
+        document.body.innerHTML = "Everything cleared!";
+        document.title = "hey there"; 
+        */
+
+        // DOM SYNTAX - Document Object
+        /* 
+        - Built-in document object called {document}
+        - It contain properties like body and title that we access using dot notation
+        - It also has methods
+
+        ----------- PROPERTIES AND METHODS ------------
+
+        --Method - is a function saved inside an object
+
+        -- document.querySelector() - let us get any element from the page and put it inside js
+        -- Every HTML element has  a property .innerHTML {which let us control the html inside the element}
+        */
+
+        console.log(document.querySelector("button").innerHTML);
+        document.querySelector("button").innerHTML = 'Changes!';
+
+        console.log(document.querySelector(".sec-btn").innerHTML);
+    </script>
+</body>
+</html>
