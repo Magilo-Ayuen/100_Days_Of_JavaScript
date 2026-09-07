@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays and Loops</title>
+</head>
+<body>
+    
+
+    <script>
+        /*
+        const myArr = [10,"20",30,40,50];
+        console.log(myArr);
+        console.log(myArr[1]); 
+        console.log(typeof myArr[1]);
+
+        // to check if sth is an array
+        console.log(Array.isArray([1,2]));
+
+
+
+        // Array properties and methods
+
+        myArr.push(99,102);
+        console.log(myArr);
+        myArr.pop();
+        console.log(myArr);
+
+        // splice() - method = it usually takes two values (index, number of elements to be removed)
+
+        myArr.splice(1,2);
+        console.log(myArr); */
+
+        // -----------LOOPS -----------------
+
+        // ----- LOOPING THROUGH THE ARRAY -------
+        /* 
+            1. Go through each value of an array one  by one
+            2. Do sth with each value
+        */
+        
+
+        /*
+        const statements = [
+            'make pancake',
+            'wash utensils',
+            'go home',
+            'play football'
+        ];
+
+        for (let index = 0 ; index <= statements.length - 1 ; index++ ) {
+            const todoItems = statements[index];
+            console.log(todoItems);
+        } */
+
+
+        //  ------------- ACCUMULATOR PATTERN -------------
+
+       /* 1. Create a variable to store the results of accumulating eg add arrays 
+          2. Loop through the arrays and update the results
+       */
+
+       const nums = [45,67,11];
+       let sum = 0; //accumulator variable
+
+       for (let i = 0 ; i < nums.length ; i++) {
+            const num = nums[i];
+            sum += num;
+            
+       }
+       console.log(sum);
+
+
+    </script>
+</body>
+</html>
