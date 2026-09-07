@@ -35,3 +35,9 @@ function calculate() {
             document.querySelector('.p').textContent = 'You choose: ' + choice;
         }
 
+//INPUT & SUBMIT
+
+        function submitName() {
+            const name = document.querySelector('.name2').value;
+            document.querySelector('.par').innerHTML = `Your name is: ${name}`;
+        }
