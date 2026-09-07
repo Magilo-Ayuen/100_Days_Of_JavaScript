@@ -23,5 +23,15 @@ function calculate() {
     document.querySelector('.total-cost').innerHTML = `$${cost}`;
 }
 
+// EXERCISES
 
+  //9a
+        const btn9a = document.querySelector('button').innerHTML;
+        console.log(btn9a);
+
+        document.querySelector('.btn2').innerHTML = '9b done!';
+
+        function pressBtn (choice) {
+            document.querySelector('.p').textContent = 'You choose: ' + choice;
+        }
 
